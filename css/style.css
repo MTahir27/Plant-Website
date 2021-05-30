@@ -40,6 +40,21 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
+section{
+    padding: 1.5rem 9%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #333;
+}
 
 .header-1, 
 .header-2, 
@@ -163,16 +178,61 @@ html{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-body{
-    height: 200rem;
+/* Home Section Styling Start */
+.home{
+    padding-top: 0px;
 }
+.home > .home-slider{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-top: 0;
+}
+.home > .home-slider .box{
+    background-size: cover ;
+    background-position: center ;
+    min-height: 55rem;
+    position: relative;
+}
+.box-1{
+    background-image: url('../images/slider1.jpg');
+}
+.box-2{
+    background-image: url('../images/slider2.jpg');
+}
+.box-3{
+    background-image: url('../images/slider3.jpg');
+}
+.home > .home-slider .box > .content{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    max-width: 50rem;
+}
+.home > .home-slider .box > .content > span{
+    font-size: 3rem;
+    color: #444;
+}
+.home > .home-slider .box > .content > h3{
+    font-size: 6rem;
+    color: #333;
+    padding: .5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Media Quries */
 
 /* For Extra Large Screen */
