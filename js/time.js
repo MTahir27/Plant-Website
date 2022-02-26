@@ -1,4 +1,4 @@
-let countDate = new Date ('June 1, 2021 00:00:00').getTime();
+let countDate = new Date ('June 1, 2022 00:00:00').getTime();
 function countDown(){
     let now = new Date().getTime();
     gap = countDate - now;
